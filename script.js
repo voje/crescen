@@ -1,8 +1,11 @@
 $(document).ready(function(){
 	$.get("header.html", function(data){
-		$("#header").html(data);
+		$("#my_header").html(data);
 	});
-	$.get("footer.html", function(data){
-		$("#footer").html(data);
+	$.get("footer.html", function(data1){
+		$("#my_footer").html(data1);
+	});
+	$.get("nav.html", function(data1){
+		$("#my_nav").html(data1);
 	});
 });
