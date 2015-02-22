@@ -9,3 +9,9 @@ $(document).ready(function(){
 		$("#my_nav").html(data1);
 	});
 });
+
+function loadContent(content){
+	$.get(content, function(data){
+		$("#my_content").html(data);
+	});
+}

@@ -1,0 +1,25 @@
+<section id="p_dirigent">
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<h3>Žiga Kert (1992)</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<img class="img-responsive" src="./img/other/ziga.jpg">
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<p id="dirigent_cv_slo"></p>
+			<hr>
+			<p id="dirigent_cv_eng"></p>
+		</div>	
+	</div
+</section>
+<script>
+	$.get("/files/zivljenjepis/cv_slo.txt", function(text){
+		$("#dirigent_cv_slo").text(text);
+	});
+	$.get("/files/zivljenjepis/cv_eng.txt", function(text){
+		$("#dirigent_cv_eng").text(text);
+	});
+</script>
