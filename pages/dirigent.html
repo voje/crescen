@@ -18,8 +18,8 @@
 <script>
 	$.get("/files/zivljenjepis/cv_slo.txt", function(text){
 		$("#dirigent_cv_slo").text(text);
-	});
+	}, 'text');
 	$.get("/files/zivljenjepis/cv_eng.txt", function(text){
 		$("#dirigent_cv_eng").text(text);
-	});
+	}, 'text');
 </script>
