@@ -16,10 +16,10 @@
 	</div
 </section>
 <script>
-	$.get("/datoteke/zivljenjepis/cv_slo.txt", function(text){
+	$.get("../datoteke/zivljenjepis/cv_slo.txt", function(text){
 		$("#dirigent_cv_slo").text(text);
 	}, 'text');
-	$.get("/datoteke/zivljenjepis/cv_eng.txt", function(text){
+	$.get("../datoteke/zivljenjepis/cv_eng.txt", function(text){
 		$("#dirigent_cv_eng").text(text);
 	}, 'text');
 </script>
