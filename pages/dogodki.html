@@ -1,0 +1,26 @@
+<section>
+<div class="row">
+	<div id="d_dogodki" class="col-md-2">
+		<ul class="nav nav-pills nav-stacked">
+		</ul>
+	</div>
+	<div class="col-md-10">
+		<p>content</p>
+	</div>
+</div>
+</section>
+<script>
+	loadDogodki();
+
+	var selectedPill = null;
+	$(document).on("click", "#d_dogodki ul li", function(){
+		if($("#d_dogodki ul li").first().hasClass("active")){
+			$("#d_dogodki ul li").first().removeClass("active");
+		}
+		if(selectedPill != null){
+			selectedPill.removeClass("active");
+		}
+		$(this).addClass("active");
+		selectedPill = $(this);
+	});
+</script>
