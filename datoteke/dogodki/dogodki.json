@@ -1,4 +1,7 @@
 {"dogodki":[
-	{"ime": "Prvi koncert", "datum": "9.1.2014", "img": "imgimg"},
-	{"ime": "Drugi koncert", "datum": "12.2.2015", "img": "im2im2"}
+	{"ime": "Prvi koncert", "datum": "2.2.2013", "tip": "mpz", "img": "im2im2"},
+	{"ime": "Drugi koncert", "datum": "9.7.2013", "tip": "ork", "img": "imgimg"},
+	{"ime": "Tretji koncert", "datum": "12.2.2014", "tip": "mpz", "img": "im2im2"},
+	{"ime": "Četrti koncert", "datum": "9.1.2015", "tip": "ork", "img": "imgimg"}
+
 ]}

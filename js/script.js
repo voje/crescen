@@ -17,18 +17,19 @@ function loadContent(content){
 	});
 }
 
-function loadDogodki(){
+function loadDogodki(tip){
 	$.get("./datoteke/dogodki/dogodki.json", function(dog){
-		console.log("loaded");
-		console.log(dog);
-		for(i in dog["dogodki"]){
-			var datum = dog["dogodki"][i]["datum"];
-			var active = "";
-			if(i == dog["dogodki"].length-1){
-				active = "class = 'active'";
+		for(var i=0; i<dog["dogodki"].length; i++){
+			if(!tip || dog["dogodki"][i]["tip"] == tip){
+				var datum = dog["dogodki"][i]["datum"];
+				var active = "";
+				if(i == dog["dogodki"].length-1){
+					active = "class = 'active'";
+				}
+				$("#d_dogodki ul").prepend("<li role='presentation'" + active + "><a href='#'>" + datum + "</a></li>");
 			}
-			$("#d_dogodki ul").prepend("<li role='presentation'" + active + "><a href='#'>" + datum + "</a></li>");
 		}
+		$("#d_dogodki ul li").first().addClass("active");
 	}, "json");
 }
 
