@@ -55,4 +55,9 @@ function fillMyContent(dogodek){
 	$("#dog_plakat").html("<img class='img-responsive' src='"+img_plakat+"'>");
 	$("#dog_besedilo").text(dogodek["besedilo"]);
 	$("#dog_album").html(dogodek["img_album"]);
+	for(i in dogodek["videos"]){
+		var video_url = dogodek["videos"][i];
+		var video_html = "<div class='col-md-6'><div class='embed-responsive embed-responsive-4by3' style='margin-top: 10px'><iframe width='560' height='315' src='"+video_url+"' frameborder='0' allowfullscreen></iframe></div></div>";
+		$("#dog_videos").append(video_html);
+	}
 }
