@@ -8,16 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#Dogodki" onclick="loadContent('./pages/dogodki.html')">Dogodki</a>
+      <a class="navbar-brand" href="#" onclick="loadContent('./pages/dogodki.html')">Dogodki</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#dirigent" onclick="loadContent('./pages/dirigent.html')">Dirigent</a></li>
-      </ul>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Sponzorji</a></li>
+        <li><a href="#" onclick="loadContent('./pages/dirigent.html')">Dirigent</a></li>
       </ul>
       <ul class="nav navbar-nav">
         <li><a href="#">Kontakt</a></li>
@@ -28,6 +25,8 @@
 
 <script>
 	$(".nav a").on("click", function(){
-		$(".navbar-toggle").click();
+		if($(".navbar-toggle").is(":visible")){
+			$(".navbar-toggle").click();
+		}
 	});
 </script>

@@ -1,16 +1,46 @@
 <section>
 <div class="row">
-	<div id="d_dogodki" class="col-md-2">
+	<div id="d_dogodki" class="col-md-3">
 		<ul class="nav nav-pills nav-stacked">
 		</ul>
 	</div>
-	<div class="col-md-10">
-		<p>content</p>
+	<div class="col-md-9">
+		<div class="row">
+			<div class="col-md-12" id="dog_naslov">
+				<h2></h2>
+			</div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="dog_plakat">
+			</div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="dog_besedilo">
+			</div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="dog_album">
+			</div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="dog_video">
+			</div>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#"><button type="button" class="btn btn-info" href="#">Nazaj na vrh</button></a>
+			</div>
+		</div>
 	</div>
 </div>
 </section>
 <script>
-	loadDogodki();
+	loadPills();
 
 	var selectedPill = null;
 	$(document).on("click", "#d_dogodki ul li", function(){
@@ -22,5 +52,8 @@
 		}
 		$(this).addClass("active");
 		selectedPill = $(this);
+
+		izberiDogodek($(this).attr("id"));
+
 	});
 </script>
