@@ -24,7 +24,7 @@ function loadPills(tip){
 		for(var i=0; i<dog["dogodki"].length; i++){
 			if(!tip || dog["dogodki"][i]["tip"] == tip){
 				var datum = dog["dogodki"][i]["datum"];
-				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#my_content'>" + datum + "</a></li>");
+				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#my_content'>"+datum+"</a></li>");
 				id = dog["dogodki"][i]["id"];
 			}
 		}
@@ -55,6 +55,7 @@ function fillMyContent(dogodek){
 	$("#dog_plakat").html("<img class='img-responsive' src='"+img_plakat+"'>");
 	$("#dog_besedilo").text(dogodek["besedilo"]);
 	$("#dog_album").html(dogodek["img_album"]);
+	$("#dog_videos").empty();
 	for(i in dogodek["videos"]){
 		var video_url = dogodek["videos"][i];
 		var video_html = "<div class='col-md-6'><div class='embed-responsive embed-responsive-4by3' style='margin-top: 10px'><iframe width='560' height='315' src='"+video_url+"' frameborder='0' allowfullscreen></iframe></div></div>";
