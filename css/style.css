@@ -5,3 +5,25 @@
 .header_footer{
 	background-color: #99B2FF;
 }
+
+/*not in use atm*/
+.my_body_wrapper{
+	background: url('../img/background/stardust.png'); 
+	background-repeat: repeat;
+}
+
+div{
+	background-color: #FFF;
+}
+
+html {
+	background: url('../img/background/footer_lodyas.png'); 
+	background-repeat: repeat;
+    display: table;
+    margin: auto;
+}
+
+.my_main_container{
+    display: table-cell;
+    vertical-align: middle;
+}
