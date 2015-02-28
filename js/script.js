@@ -23,8 +23,9 @@ function loadPills(tip){
 	$.get("./datoteke/dogodki/dogodki.json", function(dog){
 		for(var i=0; i<dog["dogodki"].length; i++){
 			if(!tip || dog["dogodki"][i]["tip"] == tip){
-				var datum = dog["dogodki"][i]["datum"];
-				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#my_content'>"+datum+"</a></li>");
+				var datum = dog["dogodki"][i]["datum"][0].split(",")[0];
+				var ime = dog["dogodki"][i]["ime"];
+				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#my_content'><p>"+datum+"</p><p>"+ime+"</p></a></li>");
 				id = dog["dogodki"][i]["id"];
 			}
 		}
@@ -50,10 +51,13 @@ function izberiDogodek(id){
 function fillMyContent(dogodek){
 	var podatki = dogodek["datum"] + ", ob " + dogodek["ura"] + ", " + dogodek["kraj"];
 	console.log(podatki);
-	$("#dog_naslov h2").html(dogodek["ime"] + " <small>" + podatki + "</small");
-	var img_plakat = dogodek["img_plakat"];
-	$("#dog_plakat").html("<img class='img-responsive' src='"+img_plakat+"'>");
-	$("#dog_besedilo").text(dogodek["besedilo"]);
+	$("#dog_naslov h2").html(dogodek["ime"] + "<br><small>" + dogodek["opis"] + "</small");
+	$("#dog_kraj_datum").html("<p>"+dogodek["kraj"]+"</p>");
+	for(i in dogodek["datum"]){
+		$("#dog_kraj_datum").append("<p>"+dogodek["datum"][i]+"</p>");
+	}
+	$("#dog_plakat").html(dogodek["img_plakat"]);
+	$("#dog_besedilo").html(dogodek["besedilo"]);
 	$("#dog_album").html(dogodek["img_album"]);
 	$("#dog_videos").empty();
 	for(i in dogodek["videos"]){
