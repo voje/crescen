@@ -22,3 +22,8 @@ html {
     vertical-align: middle;
 }
 
+.my_border{
+    border-radius: 25px;
+    border: 2px solid #99B2FF;
+    padding: 20px; 
+}
