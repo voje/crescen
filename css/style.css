@@ -3,22 +3,15 @@
 }
 
 .header_footer{
-	/*background-color: #99B2FF;*/
-	background-color: #3366ff;
-}
-
-/*not in use atm*/
-.my_body_wrapper{
-	background: url('../img/background/stardust.png'); 
-	background-repeat: repeat;
+	background-color: #99B2FF;
 }
 
 div{
-	background-color: #FFF;
+	background-color: #F0F8FF;
 }
 
 html {
-	background: url('../img/background/footer_lodyas.png'); 
+	background: url('../img/background/zwartevilt.png'); 
 	background-repeat: repeat;
     display: table;
     margin: auto;
@@ -28,3 +21,4 @@ html {
     display: table-cell;
     vertical-align: middle;
 }
+
