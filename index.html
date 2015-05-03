@@ -3,31 +3,42 @@
 
 <head>
 
-<title>Crescendo</title>
+	<title>Crescendo</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
 
-<div id="my_main_container" class="container" style="padding: 0px">
+	<!--facebook gumbi-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!--fb-->
 
-<div id="my_header" class="header_footer"></div>
-<div id="my_nav"></div>
-<div id="my_content"></div>
-<div id="my_footer" class="header_footer"></div>
+	<div id="my_main_container" class="container" style="padding: 0px">
 
-</div><!--container-->
+	<div id="my_header" class="header_footer"></div>
+	<div id="my_nav"></div>
+	<div id="my_content"></div>
+	<div id="my_footer" class="header_footer"></div>
 
-<!--load js-->
-<script src="./js/jquery-1.11.2.min.js" type="text/javascript"></script>
-<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>-->
-<script src="./js/bootstrap.min.js" type="text/javascript"></script>
-<script src="./js/script.js" type="text/javascript"></script>
+	</div><!--container-->
+
+	<!--load js-->
+	<script src="./js/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>-->
+	<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./js/script.js" type="text/javascript"></script>
 
 </body>
 
