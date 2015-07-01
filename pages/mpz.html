@@ -1,0 +1,22 @@
+<section id="p_mpz">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<h3>Na kratko o MPZ Crescendo</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<p id="zgodovina"></p>
+		</div>	
+		<div class="col-xs-12 col-md-6">
+			<img class="img-responsive center-block" src="./img/other/mpz.jpg">
+		</div>
+	</div>
+</div>
+</section>
+<script>
+	$.get("./datoteke/mpz.txt", function(text){
+		$("#zgodovina").html(text);
+	}, 'html');
+</script>
