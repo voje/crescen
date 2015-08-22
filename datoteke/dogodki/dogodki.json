@@ -46,5 +46,17 @@
 		"besedilo": "<p><a href='http://www.cd-cc.si/sl/glasba/rast-5816/'>stran cankarjevega doma</a></p><p><strong>Koncert je otvoritveni dogodek Tedna ljubiteljske kulture v organizaciji JSKD.</strong></p><p>Letna produkcija Akademske folklorne skupine France Marolt je tokrat posvečena 80-letnici rojstva enega najvidnejših koreografov in etnokoreologov na Slovenskem, Mirka Ramovša, in 60-letnici njegovega delovanja pri skupini.</p>  <p>Predstava bo zasnovana na poustvaritvi nekaterih delov koreografij Ramovševega redkeje izvajanega opusa, skupaj z novitetami umetniškega vodje Akademske folklorne skupine France Marolt Tomaža Simetingerja, ob zvokih simfoničnega orkestra, za folklorno skupino povsem neklasične glasbene spremljave. K sodelovanju smo letos povabili tudi mladega skladatelja Andreja Makorja, ki je v aranžma za simfonični orkester »preoblekel« devetdeset minut ljudske glasbe. Potek predstave bo s harmonizacijo glasbe in gradacijo plesne zasnove, ki bo temeljila na prepletu kratkih koreografij, simbolično nakazoval na nenehno rast in razvoj folklorne umetnosti, kakršno gojijo in ustvarjajo pri Akademski folklorni skupini France Marolt. Del zvočne podobe koncerta bo zapolnilo tudi a capella petje, ki bo delno usmerjeno v eksperimentalno poustvarjanje in iskanje novih zvočnosti (po)ustvarjanja t. i. ljudskega petja. Gala koncert AFS France Marolt s Simfoničnim orkestrom Crescendo bo obenem tudi del <strong>osrednjega otvoritvenega dogodka Tedna ljubiteljske kulture za osrednjo Slovenijo</strong>.</p>  <p>Premikanje meja v folklorni umetnosti je bilo od nekdaj vodilo največje in ene najstarejših slovenskih folklornih skupin – Akademske folklorne skupine France Marolt. Letne produkcije priljubljenih maroltovcev na odru Cankarjevega doma vedno znova presenečajo, poustvarjanje t. i. ljudskega plesa, glasbe in oblačilne dediščine pa postavljajo ob bok sodobni odrski umetnosti.<p>  <p>V devetdesetminutni plesno-pevski predstavi v spremljavi simfonikov bo sodelovalo več kot 150 plesalcev, pevcev in glasbenikov.</p>  <p>Umetniško vodstvo: Tomaž Simetinger</p> <p>Aranžer glasbe za simfonični orkester: Andrej Makor</p> <p>Dirigent Simfoničnega orkestra Crescendo: Žiga Kert</p>",
 		"img_album": "",
 		"videos": [] 
+	},
+	{
+		"id": "dog_5",
+		"tip": "mpz",
+		"ime": "Avdicije",
+		"opis": "Študentski mešani pevski zbor Crescendo vabi nove člane.",
+		"kraj": "Gimnazija Škofja Loka",
+		"datum": ["4.9.2015, 18:00", "11.9.2015, 18:00"],
+		"img_plakat": "<img class='img-responsive' src='https://farm6.staticflickr.com/5730/20772720026_7fcb3a0de6_b.jpg'>",
+		"besedilo": "",
+		"img_album": "",
+		"videos": []
 	}
 ]}
