@@ -8,7 +8,7 @@
 	$.getJSON("../datoteke/videi.json", function(data){
 		for(var i=0; i<data.length; i++){
 			var url = data[i]["url"];
-			$("#videos_row").append("<iframe class='col-md-6' style='margin: 20px' src='" + url + "' width='50%' height='400' frameborder='0' allowfullscreen></iframe>");
+			$("#videos_row").append("<iframe class='col-md-6' marginheight='50' src='" + url + "' width='50%' height='400' frameborder='0' allowfullscreen></iframe>");
 		}
 	});
 	//create table
