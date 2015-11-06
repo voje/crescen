@@ -58,5 +58,17 @@
 		"besedilo": "",
 		"img_album": "",
 		"videos": []
+	},
+	{
+		"id": "dog_6",
+		"tip": "ork",
+		"ime": "Božično-novoletni koncert 2014",
+		"opis": "",
+		"kraj": "Sokolski dom, Škofja Loka",
+		"datum": ["11.12.2015, 17:00 in 20:00"],
+		"img_plakat": "<img class='img-responsive' src='https://farm1.staticflickr.com/738/22835567391_721b5c6f32_b.jpg'>",
+		"besedilo": "",
+		"img_album": "",
+		"videos": []
 	}
 ]}
