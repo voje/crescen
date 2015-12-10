@@ -6,7 +6,7 @@
 </section>
 <script>
 	$.getJSON("../datoteke/videi.json", function(data){
-		for(var i=data.length-1; i<=0; i--){
+		for(var i=0; i<data.length; i++){
 			var url = data[i]["url"];
 			$("#videos_row").append("<iframe class='col-md-6' style='padding-top:5px; padding-bottom:5px' src='" + url + "' width='50%' height='400' frameborder='0' allowfullscreen></iframe>");
 		}
