@@ -1,12 +1,13 @@
-.img-center{
+.img-center {
 	margin:0 auto;
 }
 
-.header_footer{
-	background-color: #99B2FF;
+.header_footer {
+	/*background-color: #99B2FF;*/
+    background-color: #4957A2;
 }
 
-div{
+div {
 	background-color: #F0F8FF;
 }
 
@@ -17,12 +18,39 @@ html {
     margin: auto;
 }
 
-.my_main_container{
+#main_nav {
+    border: 0px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #4957A2;
+    color: #FFFFFF;
+}
+
+.nav-pills > li > a {
+    color: #4957A2;
+}
+
+#dog_plakat img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#selected_event {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#selected_event > * {
+    margin-bottom: 20px;
+}
+
+.my_main_container {
     display: table-cell;
     vertical-align: middle;
 }
 
-.my_border{
+.my_border {
     border-radius: 25px;
     border: 2px solid #99B2FF;
     padding: 20px; 

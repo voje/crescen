@@ -9,6 +9,7 @@ $(document).ready(function(){
 		$("#my_nav").html(data1);
 	});
 	loadContent("./pages/dogodki.html");
+
 });
 
 //loads content selected in navbar - default: Dogodki
