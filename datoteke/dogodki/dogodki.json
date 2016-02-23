@@ -75,11 +75,11 @@
 		"id": "dog_7",
 		"tip": "mpz",
 		"ime": "Koncert v Stari Loki",
-		"opis": "Vljudno vabljeni na koncert mešanega pevskega zbora Crescendo. Pripravili smo pester program tako ljudskih kot tudi modernejših skladb.",
+		"opis": "",
 		"kraj": "Jurijeva Dvorana, Stara Loka",
 		"datum": ["27.2.2016, 19:00"],
 		"img_plakat": "<img class='img-responsive' src='https://farm2.staticflickr.com/1570/24587787614_59813de178_b.jpg'>",
-		"besedilo": "",
+		"besedilo": "Vljudno vabljeni na koncert mešanega pevskega zbora Crescendo. Pripravili smo pester program tako ljudskih kot tudi modernejših skladb.",
 		"img_album": "",
 		"videos": []
 	}
