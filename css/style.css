@@ -18,6 +18,21 @@ html {
     margin: auto;
 }
 
+.nav-selected {
+    background-color: #4957A2;
+    color: #FFFFFF !important;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    background-color: #4957A2; 
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color: #4957A2; 
+    color: #FFFFFF;
+}
+
 #main_nav {
     border: 0px;
 }
