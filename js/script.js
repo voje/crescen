@@ -1,25 +1,67 @@
 $(document).ready(function(){
-	$.get("header.html", function(data){
-		$("#my_header").html(data);
+	console.log("ready!");
+	//dogodki
+	loadPills();
+
+	//dirigent
+	$.get("./datoteke/zivljenjepis/cv_slo.txt", function(text){
+		$("#dirigent_cv_slo").text(text);
+	}, 'text');
+	$.get("./datoteke/zivljenjepis/cv_eng.txt", function(text){
+		$("#dirigent_cv_eng").text(text);
+	}, 'text');
+
+	//orkester
+	$.get("./datoteke/zgodovina.txt", function(text){
+		$("#ork-zgodovina").html(text);
+	}, 'html');
+
+	//mpz
+	$.get("./datoteke/mpz.txt", function(text){
+		$("#mpz-zgodovina").html(text);
+	}, 'html');
+
+	//media
+	$.getJSON("../datoteke/videi.json", function(data){
+		for(var i=0; i<data.length; i++){
+			var url = data[i]["url"];
+			$("#videos_row").append("<iframe class='col-md-6' style='padding-top:5px; padding-bottom:5px' src='" + url + "' width='50%' height='400' frameborder='0' allowfullscreen></iframe>");
+		}
 	});
-	$.get("footer.html", function(data1){
-		$("#my_footer").html(data1);
+
+	//navbar handler
+	$(".nav-selection").on("click", function(){
+		$(".nav-selected").removeClass("nav-selected");
+		$(this).addClass("nav-selected");
 	});
-	$.get("nav.html", function(data1){
-		$("#my_nav").html(data1);
-	});
-	loadContent("./pages/dogodki.html");
 
 });
 
-//loads content selected in navbar - default: Dogodki
-function loadContent(content){
-	$.get(content, function(data){
-		$("#my_content").html(data);
-	});
+//handle pills
+var selectedPill = null;
+$(document).on("click", "#d_dogodki ul li", function(){
+	console.log("pill click");
+	if($("#d_dogodki ul li").first().hasClass("active")){
+		$("#d_dogodki ul li").first().removeClass("active");
+	}
+	if(selectedPill != null){
+		selectedPill.removeClass("active");
+	}
+	$(this).addClass("active");
+	selectedPill = $(this);
+
+	izberiDogodek($(this).attr("id"));
+
+});
+
+function showContent(id){
+	console.log("showing " + id);
+	$("#my_content > *").hide();
+	$("#"+id).show();
 }
 
 function loadPills(tip){
+	console.log("loading pills");
 	id = -1;
 	$.get("./datoteke/dogodki/dogodki.json", function(dog){
 		for(var i=0; i<dog["dogodki"].length; i++){

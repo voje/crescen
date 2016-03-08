@@ -4,6 +4,7 @@
 <head>
 
 	<title>Crescendo</title>
+	<meta charset="UTF-8">
 
 	<!-- nastavitve za facebook share -->
 	<meta property="og:title" content="Crescendo"/>
@@ -20,23 +21,196 @@
 
 <body>
 
-	<!--facebook gumbi-->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v2.3";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!--fb-->
-
 	<div id="my_main_container" class="container" style="padding: 0px">
 
-	<div id="my_header" class="header_footer"></div>
-	<div id="my_nav"></div>
-	<div id="my_content"></div>
-	<div id="my_footer" class="header_footer"></div>
+	<header class="header_footer">
+		<img class="img-responsive img-center" src="./img/header/header_3.png">
+	</header>
+
+	<nav class="navbar navbar-default" id="main_nav">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-collapsing-navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand nav-selection nav-selected" href="" onclick="showContent('content-dogodki')">Dogodki</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="my-collapsing-navbar">
+	      <ul class="nav navbar-nav">
+	        <li><a class="nav-selection" href="" onclick="showContent('content-dirigent')">Dirigent</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav">
+	        <li><a class="nav-selection" href="" onclick="showContent('content-orkester')">Orkester</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav">
+	        <li><a class="nav-selection" href="" onclick="showContent('content-mpz')">MPZ</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav">
+	        <li><a class="nav-selection" href="" onclick="showContent('content-media')">Media</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav">
+	        <li><a class="nav-selection" href="" onclick="showContent('content-kontakti')">Kontakti</a></li>
+	      </ul>
+
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="my_content">
+
+		<!--dogodki-->
+		<div class="container" id="content-dogodki">
+		<div class="row">
+			<div id="d_dogodki" class="col-md-2">
+				<div class="row">
+					<ul class="nav nav-pills nav-stacked">
+					</ul>
+				</div>
+			</div>
+			<div id="selected_event" class="col-md-10">
+				<div class="row">
+					<div class="col-md-12" id="dog_naslov">
+						<h2></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" id="dog_kraj_datum">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" id="dog_plakat">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" id="dog_besedilo">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" id="dog_album">
+					</div>
+				</div>
+				<div class="row" id="dog_videos">
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<a href="#"><button type="button" class="btn btn-info" href="#">Nazaj na vrh</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!--dirigent-->
+		<div class="container" id="content-dirigent" style="display: none">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3>Žiga Kert <small>(1992)</small></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<img class="img-responsive" src="./img/other/ziga.jpg">
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<p id="dirigent_cv_slo"></p>
+					<hr>
+					<p id="dirigent_cv_eng"></p>
+				</div>	
+			</div>
+		</div>
+
+		<!--orkester-->
+		<div class="container" id="content-orkester" style="display: none">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3>Na kratko o nastanku orkestra</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<p id="ork-zgodovina"></p>
+				</div>	
+				<div class="col-xs-12 col-md-6">
+					<img class="img-responsive center-block" src="./img/other/zgodovinska.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!--mpz-->
+		<div class="container" id="content-mpz" style="display: none">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3>Na kratko o MPZ Crescendo</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<p id="mpz-zgodovina"></p>
+				</div>	
+				<div class="col-xs-12 col-md-6">
+					<img class="img-responsive center-block" src="./img/other/mpz.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!--media-->
+		<div class="container" id="content-media" style="display: none">
+			<div class="row" id="videos_row">
+			</div>
+		</div>
+
+		<!--kontakti-->	
+		<div class="container" id="content-kontakti" style="display: none">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="col-md-12">
+					<div class="my_border">
+						<h4><u>naziv društva:</u></h4>
+						<p>Glasbeno društvo Crescendo</p>
+						<p><strong>matična številka: </strong>4061276000</p>
+						<p><strong>davčna številka: </strong>21372365</p>
+						<p><strong>TRR: </strong>SI56 0700 0000 2048 730</p>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="my_border">
+						<h4><u>kontakt:</u></h4>
+						<p><strong>predsednik društva: </strong><br>Andrej Mlinar<br>mlinar.andrej@gmail.com<br>031 400 341</p>
+						<p><strong>e-mail orkestra: </strong><br>s.o.crescendo@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="col-md-12">
+					<div class="my_border">
+						<div class="row">
+						<h4><u>sedež društva:</u></h4>
+						<p>Gimnazija Škofja Loka,<br>Poblubnik 1b, 4220 Škofja Loka</p>
+						</div>
+						<div class="row">
+							<div class='embed-responsive embed-responsive-4by3' style='margin-top: 10px'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.1396142694566!2d14.302600000000002!3d46.16965500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477ac61254f5b067%3A0xb54505c99b0dfbcf!2sGimnazija+%C5%A0kofja+Loka!5e1!3m2!1ssl!2ssi!4v1424966158888" width="100%" height="auto" frameborder="0" style="border:0"></iframe></div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+	</div>
+
+	<footer class="text-center header_footer" style="margin-top: 10px; padding: 10px">
+		<img style="padding-top: 10px" src="../img/logo/elektro_gorenjska.jpg"/>
+		<p style="padding-top: 10px">Glasbeno Društvo Crescendo</p>
+	</footer>
 
 	</div><!--container-->
 
