@@ -82,5 +82,17 @@
 		"besedilo": "Vljudno vabljeni na koncert mešanega pevskega zbora Crescendo. Pripravili smo pester program tako ljudskih kot tudi modernejših skladb.",
 		"img_album": "",
 		"videos": []
+	},
+	{
+		"id": "dog_8",
+		"tip": "mpz",
+		"ime": "Koncert v Preski",
+		"opis": "Opomba: koncert se bo odvijal v cerkvi in ne v župnijski dvorani.",
+		"kraj": "Cerkev v Preski",
+		"datum": ["12.3.2016, 19:00"],
+		"img_plakat": "<img class='img-responsive' src='https://farm2.staticflickr.com/1654/25670537196_3a948fe6bc_o.jpg'>",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
 	}
 ]}
