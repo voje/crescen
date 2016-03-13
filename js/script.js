@@ -68,7 +68,7 @@ function loadPills(tip){
 			if(!tip || dog["dogodki"][i]["tip"] == tip){
 				var datum = dog["dogodki"][i]["datum"][0].split(",")[0];
 				var ime = dog["dogodki"][i]["ime"];
-				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#dog_naslov'><p>"+datum+"</p><p>"+ime+"</p></a></li>");
+				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#/'><p>"+datum+"</p><p>"+ime+"</p></a></li>");
 				id = dog["dogodki"][i]["id"];
 			}
 		}
