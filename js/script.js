@@ -54,7 +54,7 @@ $(document).on("click", "#d_dogodki ul li", function(){
 
 });
 
-function showContent(id){
+function showContent(id, e){
 	console.log("showing " + id);
 	$("#my_content > *").hide();
 	$("#"+id).show();
