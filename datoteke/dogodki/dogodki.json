@@ -94,5 +94,29 @@
 		"besedilo": "Vljudno vabljeni!",
 		"img_album": "",
 		"videos": []
+	},
+	{
+		"id": "dog_9",
+		"tip": "mpz",
+		"ime": "Koncert v Stražišču",
+		"opis": "",
+		"kraj": "Šmartinski dom v Stražišču",
+		"datum": ["3.4.2016, 20:00"],
+		"img_plakat": "<img class='img-responsive' src='https://farm2.staticflickr.com/1644/25704269444_37bbc275a4_o.jpg'>",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
+	},
+	{
+		"id": "dog_10",
+		"tip": "mpz",
+		"ime": "Koncert na Bledu",
+		"opis": "",
+		"kraj": "cerkev sv. Martina na Bledu",
+		"datum": ["17.4.2016, 20:00"],
+		"img_plakat": "<img class='img-responsive' src='https://farm2.staticflickr.com/1587/26309139625_a1399678ed_o.jpg'>",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
 	}
 ]}
