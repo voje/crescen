@@ -2,6 +2,12 @@ body{
     overflow-y: scroll;
 }
 
+/*
+a {
+    outline: none;
+}
+*/
+
 .img-center {
 	margin:0 auto;
 }
@@ -9,6 +15,15 @@ body{
 .header_footer {
 	/*background-color: #99B2FF;*/
     background-color: #4957A2;
+}
+
+.footer_images {
+    height: 80px;
+}
+
+.footer_images img {
+    height: 100%;
+    padding: 10px 10px 0px 10px;
 }
 
 div {
