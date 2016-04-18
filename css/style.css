@@ -2,6 +2,15 @@ body{
     overflow-y: scroll;
 }
 
+p {
+    margin: 0px 0px 0px;
+}
+
+header p {
+    font-size: 44px;
+    text-align: center; 
+}
+
 /*
 a {
     outline: none;
