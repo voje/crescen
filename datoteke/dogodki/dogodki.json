@@ -118,5 +118,17 @@
 		"besedilo": "Vljudno vabljeni!",
 		"img_album": "",
 		"videos": []
+	},
+	{
+		"id": "dog_11",
+		"tip": "mpz",
+		"ime": "Magistrski koncert",
+		"opis": "Pa smo tu! Koncert na katerega smo se pripravljali vse leto.",
+		"kraj": "Kazinska dvorana, Kongresni trg 1/I",
+		"datum": ["22.4.2016, 19:30"],
+		"img_plakat": "<img class='img-responsive' src='https://farm2.staticflickr.com/1511/26486588936_b80885768a_o.jpg'>",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
 	}
 ]}
