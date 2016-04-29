@@ -1,0 +1,257 @@
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Great Vibes', cursive;
+    }
+    
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+/* ==========================================================================
+   MAIN STYLES
+   ========================================================================== */
+
+
+html,
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: aller, arial, verdana, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#main-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding-bottom: 100px;
+
+}
+
+body {
+    background: url(../img/vzorec_ozadje.png) top left repeat ;
+}
+
+/*dve pikici pomenita vrnitev v prejšnjo mapo */ 
+
+header {
+    width: 100%;
+    height: 685px;
+    background-image: url(../img/header-image.jpg);
+    font-family: 'Open Sans';
+    font-size: 1.4em;
+    position: relative;
+}
+
+/* z googla pisavo importiraš tako, da kopiraš css link (ga dobiš na google fonts) v html head. Če ima pisava dve besedi za ime, morš dat v cssu v narekovaje. */
+
+
+#logo {
+    display: block;
+    width: 200px;
+    height: 120px;
+    float: right;
+    background-image: url(../img/logo_gd_crescendo.png);
+    background-position: right;
+    text-indent:-9999px;
+}
+
+/* text-indent je za zamik teksta v htmlju */
+nav#main-nav {
+    height: 50px;
+    width: 1280 px;
+    position: absolute;
+    top: 635px;
+    left: 0%; 
+    
+}
+
+nav#main-nav ul {
+	display: block;
+	height: 50px;
+	background-image: url(../img/nav-bk.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	margin: 0;
+	padding: 0;
+	margin-left: 24px;
+	}
+
+nav#main-nav ul li {
+    float: left;
+        
+   }
+
+nav#main-nav ul li a {
+    display:block;
+    padding: 15px 98px;
+    line-height: 20px;
+    color: #fff;
+    background-color: rgba(75, 75, 75, 1);
+}
+
+
+nav#main-nav ul li a:hover {
+    background-color: rgba(120, 180, 205, 1);
+}
+
+/* hover je lastnost, ki se pojavi, ko greš z miško čez element*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* clearfix je za preprečitev sesedanja starša, ki ima le lebdeče (float) elemente. Razred clearfix moramo v htmlju dodeliti staršu. 
+Clear poskrbi, da se na obeh straneh (both) prostor "zasede". */
+
+
+/* position: relative (top, left, right, bottom), absolute (pozicija glede na starša; staršu dodelimo relative, temu pa absolute) ali fixed (glede na okno - ostane na zaslonu, ko scrollaš)- za določanje pozicije*/
+
+header hgroup {
+    position: relative;
+    width: 100%;
+    top: 50px;
+    left: 7.5%;
+    position: absolute;
+    text-align: left;
+    color: #fff;
+}
+
+header hgroup h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6)     
+}
+
+
+/* OSREDNJI DEL */
+
+section {
+	width: 80%;
+	float: center;
+	margin: 0 0 10% 10%;
+}
+
+section img {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: center;
+}
+
+section h2{
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+section h3{
+  font-family: 'Open Sans';
+  font-size: 40px;
+}
+
+footer {
+    background-color: rgba(54, 54, 54, 1);
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+
+
+
+
+
+/* 694px */
+@media only screen and (max-width: 43.375em) { 
+
+
+
+	nav#main-nav {
+		background-image: url(../img/nav-bk.png);
+		background-repeat: repeat;
+		width: 100%;
+		height: auto;
+		clear: both;
+		margin-top: 40px;
+	}
+	
+	nav#main-nav ul {
+		margin: 0 auto;
+		width: 90%;
+		height: auto;
+		background-image: none;
+		
+	}
+	
+	
+	header hgroup {
+		margin-top: 20px;
+	}
+	
+	header hgroup h1 {
+		font-size: 40px;
+	}
+	
+
+	section {
+		width: 60%;
+		float: right;
+		margin: 2.5% 2.5% 0 0;
+	}
+
+  
+}
+
+
+/* 549px */
+
+@media only screen and (max-width: 34.3125em) { 
+	
+	nav#main-nav ul li {
+		float: none;
+	}
+	
+	nav#main-nav ul {
+		width: 100%;
+		margin-top: -400px;
+	}
+	
+	header {
+		height: auto;
+	}
+	
+	header #logo, header nav#main-nav, header hgroup {
+		float: none;
+	}
+	
+	header nav#main-nav{
+    margin-top:0px;
+	}
+	header hgroup {
+		padding-bottom: 50px;
+		margin-top: 50px;
+		opacity: 0;
+	
+	}
+	
+	section {
+		width: 90%;
+		margin: 5%;
+		margin-top: 350px;	
+	}
