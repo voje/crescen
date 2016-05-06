@@ -1,21 +1,34 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	margin: 0px, 0px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 }
 
 #hero {
-	background-image: url("../jumbotrons/moon.jpg");
+	z-index: -1;
+	background-image: url("../jumbotrons/notes.jpg");
 	background-size: cover;
 	position: relative;	
 	height: 100vh;
-	margin-bottom: 0px;
 }
 
-.header {
-	color: #fff;
+#hero_text {
+	position: relative;
+	color: #FFF;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.content {
+	z-index: 1;
+	width: 100%;
+	background-color: #FFF;
+	position: relative;
+	padding: 10%;
 }
