@@ -130,5 +130,17 @@
 		"besedilo": "Vljudno vabljeni!",
 		"img_album": "",
 		"videos": []
+	},
+	{
+		"id": "dog_12",
+		"tip": "ork",
+		"ime": "Pot ljubezni iz New Yorka do Firenc",
+		"opis": "",
+		"kraj": "Sokolski dom, Škofja Loka",
+		"datum": ["13.5.2016, 17:00 in 19:30"],
+		"img_plakat": "<img class='img-responsive' src='https://farm8.staticflickr.com/7294/26237549273_e720c616ee_b.jpg'>",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": ["https://www.youtube.com/embed/AldobY5Sa0Q"]
 	}
 ]}
