@@ -25,7 +25,23 @@ body {
 	align-items: center;
 }
 
-.content {
+#navbar {
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	color: #000;
+	background-color: #FFF; /*color1*/
+	display: none; /*wait for fadeIn()*/
+}
+
+#navbar li {
+	display: inline;
+}
+
+#content {
 	z-index: 1;
 	width: 100%;
 	background-color: #FFF;
