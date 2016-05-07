@@ -58,6 +58,7 @@ body {
 
 #navbar li > a {
 	padding-bottom: 12px;
+	background-color: #FFF;
 }
 
 #navbar ul > li > a:hover {
@@ -69,7 +70,7 @@ body {
 	width: 100%;
 	background-color: #FFF;
 	position: relative;
-	padding: 10%;
+	padding: 5% 15% 5% 15%;
 	text-align: center;
 }
 
@@ -79,8 +80,14 @@ body {
 
 .event_display * {
 	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .event_display iframe {
-	height: 80vh;
+	height: 50vh;
+}
+
+.event_display h2 {
+	margin-bottom: 40px;
 }

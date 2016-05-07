@@ -10,7 +10,7 @@ var events_data = {};
 function display_event(id){
 	event = events_data[id];
 	//display header, video?, place, time?, poster?, commentary
-	select.recent_event.find("a").append("<h2>"+ event.ime +"</h2>");	
+	select.recent_event.append("<h2>"+ event.ime +"</h2>");	
 
 	if(event.opis != "")
 		select.recent_event.append("<p>"+ event.opis +"</p>");	
