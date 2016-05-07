@@ -3,6 +3,10 @@
 	padding: 0px;
 }
 
+a:hover, a:active, a:focus {
+	outline: 0;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
@@ -35,10 +39,25 @@ body {
 	color: #000;
 	background-color: #FFF; /*color1*/
 	display: none; /*wait for fadeIn()*/
+	border-radius: 0px;
+	border-color: #FFF;
+}
+
+/*center the navbar*/
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
 }
 
 #navbar li {
 	display: inline;
+}
+
+#navbar ul > li > a:hover {
+	border-bottom: 2px solid #333;
 }
 
 #content {
