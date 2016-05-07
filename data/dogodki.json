@@ -1,6 +1,5 @@
-{"dogodki":[
+{	"dog_1":
 	{
-		"id": "dog_1",
 		"tip": "ork",
 		"ime": "Pomladni koncert 2014",
 		"opis": "",
@@ -11,8 +10,8 @@
 		"img_album": "<div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157651009906021&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>",
 		"videos": ["https://www.youtube.com/embed/KOfKGjfWYjg", "https://www.youtube.com/embed/nF-LMyU3TSY", "https://www.youtube.com/embed/ByQrznOFHYQ", "https://www.youtube.com/embed/oy4QrdmnZNI"]
 	},
+	"dog_2":
 	{
-		"id": "dog_2",
 		"tip": "ork",
 		"ime": "Popularna glasba 20. stoletja",
 		"opis": "",
@@ -23,8 +22,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_3":
 	{
-		"id": "dog_3",
 		"tip": "ork",
 		"ime": "Božično-novoletni koncert 2014",
 		"opis": "",
@@ -35,8 +34,8 @@
 		"img_album": "<div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157650974639716&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>",
 		"videos": ["https://www.youtube.com/embed/kvORSJFWxDE"]
 	},
+	"dog_4":
 	{
-		"id": "dog_4",
 		"tip": "ork",
 		"ime": "RAST",
 		"opis": "Gala koncert Akademske folklorne skupine France Marolt in Simfoničnega orkestra Crescendo",
@@ -47,8 +46,8 @@
 		"img_album": "",
 		"videos": [] 
 	},
+	"dog_5":
 	{
-		"id": "dog_5",
 		"tip": "mpz",
 		"ime": "Avdicije",
 		"opis": "Študentski mešani pevski zbor Crescendo vabi nove člane.",
@@ -59,8 +58,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_6":
 	{
-		"id": "dog_6",
 		"tip": "ork",
 		"ime": "Božično-novoletni koncert 2015",
 		"opis": "",
@@ -71,8 +70,8 @@
 		"img_album": "",
 		"videos": ["https://www.youtube.com/embed/a5Kn7-XmsXM"]
 	},
+	"dog_7":
 	{
-		"id": "dog_7",
 		"tip": "mpz",
 		"ime": "Koncert v Stari Loki",
 		"opis": "",
@@ -83,8 +82,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_8":
 	{
-		"id": "dog_8",
 		"tip": "mpz",
 		"ime": "Koncert v Preski",
 		"opis": "Opomba: koncert se bo odvijal v cerkvi in ne v župnijski dvorani.",
@@ -95,8 +94,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_9":
 	{
-		"id": "dog_9",
 		"tip": "mpz",
 		"ime": "Koncert v Stražišču",
 		"opis": "",
@@ -107,8 +106,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_10":
 	{
-		"id": "dog_10",
 		"tip": "mpz",
 		"ime": "Koncert na Bledu",
 		"opis": "",
@@ -119,8 +118,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_11":
 	{
-		"id": "dog_11",
 		"tip": "mpz",
 		"ime": "Magistrski koncert",
 		"opis": "Pa smo tu! Koncert na katerega smo se pripravljali vse leto.",
@@ -131,8 +130,8 @@
 		"img_album": "",
 		"videos": []
 	},
+	"dog_12":
 	{
-		"id": "dog_12",
 		"tip": "ork",
 		"ime": "Pot ljubezni iz New Yorka do Firenc",
 		"opis": "",
@@ -143,4 +142,4 @@
 		"img_album": "",
 		"videos": ["https://www.youtube.com/embed/AldobY5Sa0Q"]
 	}
-]}
+}

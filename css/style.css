@@ -56,6 +56,10 @@ body {
 	display: inline;
 }
 
+#navbar li > a {
+	padding-bottom: 12px;
+}
+
 #navbar ul > li > a:hover {
 	border-bottom: 2px solid #333;
 }
@@ -66,4 +70,17 @@ body {
 	background-color: #FFF;
 	position: relative;
 	padding: 10%;
+	text-align: center;
+}
+
+.event_display p {
+	padding-top: 10px;
+}
+
+.event_display * {
+	width: 100%;
+}
+
+.event_display iframe {
+	height: 80vh;
 }
