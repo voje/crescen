@@ -1,8 +1,8 @@
 var select = {
 	navbar: $("#navbar"),
 	hero: $("#hero"),
-	hero_text: $("#hero_text"),
-	recent_event: $("#recent_event")	
+	hero_text: $("#hero-text"),
+	recent_event: $("#recent-event")	
 };
 
 var events_data = {};

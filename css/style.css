@@ -20,7 +20,7 @@ body {
 	height: 100vh;
 }
 
-#hero_text {
+#hero-text {
 	position: relative;
 	color: #FFF;
 	height: 100%;
@@ -70,24 +70,56 @@ body {
 	width: 100%;
 	background-color: #FFF;
 	position: relative;
-	padding: 5% 15% 5% 15%;
+	padding: 5% 20% 5% 20%;
 	text-align: center;
 }
 
-.event_display p {
+#content h2 {
+	font-size: 35px;
+}
+
+#content p {
+	font-size: 20px;
+}
+
+.event-display p {
 	padding-top: 10px;
 }
 
-.event_display * {
+.event-display * {
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-.event_display iframe {
+.event-display iframe {
 	height: 50vh;
 }
 
-.event_display h2 {
+.event-display h2 {
 	margin-bottom: 40px;
+}
+
+footer {
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	background-color: #333;
+	color: #FFF;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+footer * {
+	display: inline-block;
+	margin: 0px;
+	max-height: 60px;
+}
+
+footer a {
+	float: right;
+}
+
+footer img {
+	padding: 4px;
 }
