@@ -12,6 +12,14 @@ body {
 	font-weight: 300;
 }
 
+h2 {
+	font-size: 35px;
+}
+
+p {
+	font-size: 15px;
+}
+
 #hero {
 	z-index: -1;
 	background-image: url("../jumbotrons/notes.jpg");
@@ -57,7 +65,7 @@ body {
 }
 
 #navbar li > a {
-	padding-bottom: 12px;
+	padding-bottom: 13px;
 	background-color: #FFF;
 }
 
@@ -70,16 +78,16 @@ body {
 	width: 100%;
 	background-color: #FFF;
 	position: relative;
-	padding: 5% 20% 5% 20%;
+	padding: 5% 20% 0% 20%;
 	text-align: center;
 }
 
-#content h2 {
-	font-size: 35px;
+#content > div {
+	margin-bottom: 50px;
 }
 
-#content p {
-	font-size: 20px;
+#contact > div > div {
+	margin-bottom: 25px;
 }
 
 .event-display p {
