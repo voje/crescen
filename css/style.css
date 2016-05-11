@@ -120,7 +120,7 @@ footer {
 	height: 60px;
 	line-height: 60px;
 	width: 100%;
-	background-color: #333;
+	background-color: rgb(65, 71, 61);
 	color: #FFF;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -143,8 +143,8 @@ footer img {
 /*probbably shouldn't use color in website - too many colorful pictures*/
 .test-gradient {
     background: #FFF; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#FFF, #3366FF); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFF, #3366FF); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFF, #3366FF); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFF, #3366FF); /* Standard syntax */
+    background: -webkit-linear-gradient(#FFF, rgb(65, 71, 61));/* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, rgb(65, 71, 61)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF, rgb(65, 71, 61)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, rgb(65, 71, 61)); /* Standard syntax */
 }
