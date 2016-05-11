@@ -2,6 +2,7 @@ var select = {
 	navbar: $("#navbar"),
 	hero: $("#hero"),
 	hero_text: $("#hero-text"),
+	hero_arrow: $("#hero-arrow"),
 	recent_event: $("#recent-event")	
 };
 
@@ -52,6 +53,7 @@ function scroll_callback(){
 	select.hero.css("top", y_pos * 0.7);
 	select.hero_text.css("opacity", 30/y_pos);
 	select.hero_text.css("top", -y_pos * 0.2);
+	select.hero_arrow.css("top", -y_pos * 0.2);
 }
 
 $(document).ready(function(){
@@ -60,3 +62,12 @@ $(document).ready(function(){
 });
 
 window.addEventListener("scroll", scroll_callback);
+
+function scroll_to_anchor(anchor_id){
+    var tag = $("#"+anchor_id+"");
+    $('html,body').animate({scrollTop: tag.offset().top - 50},'slow');
+}
+
+$("#nav-recent-event").click(function(){ scroll_to_anchor("recent-event"); });
+$("#nav-contact").click(function(){ scroll_to_anchor("contact"); });
+
