@@ -2,6 +2,7 @@ var select = {
 	navbar: $("#navbar"),
 	hero: $("#hero"),
 	hero_text: $("#hero-text"),
+	hero_arrow: $("#hero-arrow"),
 	recent_event: $("#recent-event")	
 };
 
@@ -41,6 +42,11 @@ function load_events_data(data){
 	display_event(last_event_id);
 }
 
+function load_header(data){
+	var im = data[1][0];
+	select.hero.css("background-image", "url("+ im +")");
+}
+
 function scroll_callback(){
 	var y_pos, jumbotron, header_text;
 	y_pos = window.pageYOffset;
@@ -52,11 +58,22 @@ function scroll_callback(){
 	select.hero.css("top", y_pos * 0.7);
 	select.hero_text.css("opacity", 30/y_pos);
 	select.hero_text.css("top", -y_pos * 0.2);
+	select.hero_arrow.css("top", -y_pos * 0.2);
 }
 
 $(document).ready(function(){
 	console.log("greetings!");
+	$.getJSON("./images/jumbotrons/headers.json", load_header);
 	$.getJSON("./data/dogodki.json", load_events_data);
 });
 
 window.addEventListener("scroll", scroll_callback);
+
+function scroll_to_anchor(anchor_id){
+    var tag = $("#"+anchor_id+"");
+    $('html,body').animate({scrollTop: tag.offset().top - 50},'slow');
+}
+
+$("#nav-recent-event").click(function(){ scroll_to_anchor("recent-event"); });
+$("#nav-contact").click(function(){ scroll_to_anchor("contact"); });
+

@@ -5,6 +5,7 @@
 
 a:hover, a:active, a:focus {
 	outline: 0;
+	color: #333;
 }
 
 body {
@@ -22,7 +23,6 @@ p {
 
 #hero {
 	z-index: -1;
-	background-image: url("../jumbotrons/notes.jpg");
 	background-size: cover;
 	position: relative;	
 	height: 100vh;
@@ -37,6 +37,10 @@ p {
 	align-items: center;
 }
 
+#hero-text > h1 {
+	font-size: 50px;
+}
+
 #navbar {
 	position: fixed;
 	z-index: 10;
@@ -44,7 +48,6 @@ p {
 	height: 40px;
 	line-height: 40px;
 	width: 100%;
-	color: #000;
 	background-color: #FFF; /*color1*/
 	display: none; /*wait for fadeIn()*/
 	border-radius: 0px;
@@ -69,8 +72,13 @@ p {
 	background-color: #FFF;
 }
 
+#navbar ul > li > a:focus{
+	color: #777;
+}
+
 #navbar ul > li > a:hover {
 	border-bottom: 2px solid #333;
+	color: #333;
 }
 
 #content {
