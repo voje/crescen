@@ -3,6 +3,10 @@
 	padding: 0px;
 }
 
+.row {
+	margin: 0px;
+}
+
 a:hover, a:active, a:focus {
 	outline: 0;
 	color: #333;
@@ -39,6 +43,7 @@ p {
 
 #hero-text > h1 {
 	font-size: 50px;
+	text-shadow: 1px 1px #111;
 }
 
 #navbar {
@@ -90,6 +95,10 @@ p {
 	text-align: center;
 }
 
+#content frame, #content iframe, #content img {
+	width: 100%;
+}
+
 #content > div {
 	margin-bottom: 50px;
 }
@@ -98,12 +107,11 @@ p {
 	margin-bottom: 25px;
 }
 
-.event-display p {
+.event-display, #conductor p {
 	padding-top: 10px;
 }
 
-.event-display * {
-	width: 100%;
+.event-display *, #conductor iframe, #conductor p, #conductor h2 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -112,15 +120,22 @@ p {
 	height: 50vh;
 }
 
-.event-display h2 {
+.event-display h2, #conductor h2 {
 	margin-bottom: 40px;
+}
+
+#cv-slo {
+	text-align: right;
+}
+
+#cv-eng {
+	text-align: left;
 }
 
 footer {
 	height: 60px;
 	line-height: 60px;
 	width: 100%;
-	background-color: rgb(65, 71, 61);
 	color: #FFF;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -138,13 +153,4 @@ footer a {
 
 footer img {
 	padding: 4px;
-}
-
-/*probbably shouldn't use color in website - too many colorful pictures*/
-.test-gradient {
-    background: #FFF; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#FFF, rgb(65, 71, 61));/* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFF, rgb(65, 71, 61)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFF, rgb(65, 71, 61)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFF, rgb(65, 71, 61)); /* Standard syntax */
 }
