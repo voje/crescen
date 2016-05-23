@@ -1,111 +1,93 @@
+var select = {
+	navbar: $("#navbar"),
+	hero: $("#hero"),
+	hero_text: $("#hero-text"),
+	hero_arrow: $("#hero-arrow"),
+	recent_event: $("#recent-event"),
+	conductor_img: $("#conductor-img"),
+	content: $("#content"),
+	footer: $("footer")
+};
+
+var events_data = {};
+
+function display_event(id){
+	event = events_data[id];
+	//display header, video?, place, time?, poster?, commentary
+	select.recent_event.append("<h2>"+ event.ime +"</h2>");	
+
+	if(event.opis != "")
+		select.recent_event.append("<p>"+ event.opis +"</p>");	
+
+	if(event.videos.length != 0)
+		for(i in event.videos){
+			select.recent_event.append("<figure><iframe src='"+ event.videos[i] +"'/></figure>");
+		}
+
+	if(event.kraj != "")
+		select.recent_event.append("<p>"+ event.kraj +"</p>");	
+
+	if(event.datum != "")
+		select.recent_event.append("<p>"+ event.datum +"</p>");	
+
+	if(event.img_plakat != "")
+		select.recent_event.append("<figure><img src='"+ event.img_plakat +"'/></figure>");	
+
+	if(event.besedilo != "")
+		select.recent_event.append("<p>"+ event.besedilo +"</p>");	
+}
+
+function load_events_data(data){
+	events_data = data;
+	var keys = Object.keys(events_data);	
+	var last_event_id = keys[keys.length - 1];
+	//first run: display the last event on homepage
+	display_event(last_event_id);
+}
+
+function load_header(data){
+	var num = Math.floor(Math.random()*data.length);	//select a random image
+	var im = data[num][0];
+	var color = data[num][1];
+	var base_color = "#FFF";
+	select.hero.css("background-image", "url("+ im +")");
+	select.content.css("background", color);
+	select.content.css("background", "-webkit-linear-gradient("+base_color+", "+color+")");
+	select.content.css("background", "-o-linear-gradient("+base_color+", "+color+")");
+	select.content.css("background", "-moz-linear-gradient("+base_color+", "+color+")");
+	select.content.css("background", "linear-gradient("+base_color+", "+color+")");
+	select.footer.css("background-color", color);
+}
+
+function scroll_callback(){
+	var y_pos = window.pageYOffset;
+	console.log(y_pos);
+	if(y_pos > select.hero.height()){
+		select.navbar.fadeIn("slow");
+	}else{
+		select.navbar.fadeOut("slow");
+	}
+	select.hero.css("top", y_pos * 0.7);
+	select.hero_text.css("opacity", 30/y_pos);
+	select.hero_text.css("top", -y_pos * 0.2);
+	select.hero_arrow.css("top", -y_pos * 0.2);
+	//select.conductor_img.css("top", -y_pos * 0.7);
+}
+
 $(document).ready(function(){
-	console.log("ready!");
-	//dogodki
-	loadPills();
-
-	//dirigent
-	$.get("./datoteke/zivljenjepis/cv_slo.txt", function(text){
-		$("#dirigent_cv_slo").text(text);
-	}, 'text');
-	$.get("./datoteke/zivljenjepis/cv_eng.txt", function(text){
-		$("#dirigent_cv_eng").text(text);
-	}, 'text');
-
-	//orkester
-	$.get("./datoteke/zgodovina.txt", function(text){
-		$("#ork-zgodovina").html(text);
-	}, 'html');
-
-	//mpz
-	$.get("./datoteke/mpz.txt", function(text){
-		$("#mpz-zgodovina").html(text);
-	}, 'html');
-
-	//media
-	$.getJSON("../datoteke/videi.json", function(data){
-		for(var i=0; i<data.length; i++){
-			var url = data[i]["url"];
-			$("#videos_row").append("<iframe class='col-md-6' style='padding-top:5px; padding-bottom:5px' src='" + url + "' width='50%' height='400' frameborder='0' allowfullscreen></iframe>");
-		}
-	});
-
-	//navbar handler
-	$(".nav-selection").on("click", function(){
-		$(".nav-selected").removeClass("nav-selected");
-		$(this).addClass("nav-selected");
-	});
-
+	console.log("greetings!");
+	$.getJSON("./images/jumbotrons/headers.json", load_header);
+	$.getJSON("./data/dogodki.json", load_events_data);
 });
 
-//handle pills
-var selectedPill = null;
-$(document).on("click", "#d_dogodki ul li", function(){
-	console.log("pill click");
-	if($("#d_dogodki ul li").first().hasClass("active")){
-		$("#d_dogodki ul li").first().removeClass("active");
-	}
-	if(selectedPill != null){
-		selectedPill.removeClass("active");
-	}
-	$(this).addClass("active");
-	selectedPill = $(this);
+window.addEventListener("scroll", scroll_callback);
 
-	izberiDogodek($(this).attr("id"));
-
-});
-
-function showContent(id, e){
-	console.log("showing " + id);
-	$("#my_content > *").hide();
-	$("#"+id).show();
+function scroll_to_anchor(anchor_id){
+    var tag = $("#"+anchor_id+"");
+    $('html,body').animate({scrollTop: tag.offset().top - 50},'slow');
 }
 
-function loadPills(tip){
-	console.log("loading pills");
-	id = -1;
-	$.get("./datoteke/dogodki/dogodki.json", function(dog){
-		for(var i=0; i<dog["dogodki"].length; i++){
-			if(!tip || dog["dogodki"][i]["tip"] == tip){
-				var datum = dog["dogodki"][i]["datum"][0].split(",")[0];
-				var ime = dog["dogodki"][i]["ime"];
-				$("#d_dogodki ul").prepend("<li role='presentation' id='" + dog["dogodki"][i]["id"] + "'><a href='#/'><p>"+datum+"</p><p>"+ime+"</p></a></li>");
-				id = dog["dogodki"][i]["id"];
-			}
-		}
-		$("#d_dogodki ul li").first().addClass("active");
-		izberiDogodek(id);
-	}, "json");
-}
+$("#nav-recent-event").click(function(){ scroll_to_anchor("recent-event"); });
+$("#nav-conductor").click(function(){ scroll_to_anchor("conductor"); });
+$("#nav-contact").click(function(){ scroll_to_anchor("contact"); });
 
-//load event content from dogodki.json into #my_content
-function izberiDogodek(id){
-	console.log("izbira: " + id);
-	$.get("./datoteke/dogodki/dogodki.json", function(dog){
-		var dogodki = dog["dogodki"];
-		for(i in dogodki){
-			if(id == dogodki[i]["id"]){
-				fillMyContent(dogodki[i]);
-			}
-		}
-	}, "json");
-}
-
-//funkcija dobi objekt iz datoteke dogodki.json in ga vstavi v #my_content
-function fillMyContent(dogodek){
-	var podatki = dogodek["datum"] + ", ob " + dogodek["ura"] + ", " + dogodek["kraj"];
-	console.log(podatki);
-	$("#dog_naslov h2").html(dogodek["ime"] + "<br><small>" + dogodek["opis"] + "</small");
-	$("#dog_kraj_datum").html("<p>"+dogodek["kraj"]+"</p>");
-	for(i in dogodek["datum"]){
-		$("#dog_kraj_datum").append("<p>"+dogodek["datum"][i]+"</p>");
-	}
-	$("#dog_plakat").html(dogodek["img_plakat"]);
-	$("#dog_besedilo").html(dogodek["besedilo"]);
-	$("#dog_album").html(dogodek["img_album"]);
-	$("#dog_videos").empty();
-	for(i in dogodek["videos"]){
-		var video_url = dogodek["videos"][i];
-		var video_html = "<div class='col-md-6'><div class='embed-responsive embed-responsive-4by3' style='margin-top: 10px'><iframe width='560' height='315' src='"+video_url+"' frameborder='0' allowfullscreen></iframe></div></div>";
-		$("#dog_videos").append(video_html);
-	}
-}

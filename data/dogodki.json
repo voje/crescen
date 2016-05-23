@@ -1,0 +1,145 @@
+{	"dog_1":
+	{
+		"tip": "ork",
+		"ime": "Pomladni koncert 2014",
+		"opis": "",
+		"kraj": "Sokolski dom, Škofja Loka",
+		"datum": ["9.5.2014, 17:00 in 19:00"],
+		"img_plakat": "https://farm9.staticflickr.com/8677/16016122163_9efb509699_b.jpg",
+		"besedilo": "",
+		"img_album": "<div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157651009906021&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>",
+		"videos": ["https://www.youtube.com/embed/KOfKGjfWYjg", "https://www.youtube.com/embed/nF-LMyU3TSY", "https://www.youtube.com/embed/ByQrznOFHYQ", "https://www.youtube.com/embed/oy4QrdmnZNI"]
+	},
+	"dog_2":
+	{
+		"tip": "ork",
+		"ime": "Popularna glasba 20. stoletja",
+		"opis": "",
+		"kraj": "Sokolski dom, Škofja Loka",
+		"datum": ["10.10.2014, 19:30"],
+		"img_plakat": "https://farm9.staticflickr.com/8592/16460579448_2586e07335_b.jpg",
+		"besedilo": "",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_3":
+	{
+		"tip": "ork",
+		"ime": "Božično-novoletni koncert 2014",
+		"opis": "",
+		"kraj": "Cerkev Sv Jurija, Stara Loka, Škofja Loka",
+		"datum": ["20.12.2014, 19:00"],
+		"img_plakat": "https://farm9.staticflickr.com/8623/16025854514_c2e5f67df5_b.jpg",
+		"besedilo": "",
+		"img_album": "<div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157650974639716&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>",
+		"videos": ["https://www.youtube.com/embed/kvORSJFWxDE"]
+	},
+	"dog_4":
+	{
+		"tip": "ork",
+		"ime": "RAST",
+		"opis": "Gala koncert Akademske folklorne skupine France Marolt in Simfoničnega orkestra Crescendo",
+		"kraj": "Cankarjev dom, Ljubljana",
+		"datum": ["16.5.2015, 19:30", "17.5.2015, 18:00"],
+		"img_plakat": "https://farm8.staticflickr.com/7690/16629626723_4cdc15f792_b.jpg",
+		"besedilo": "<p><a href='http://www.cd-cc.si/sl/glasba/rast-5816/'>stran cankarjevega doma</a></p><p><strong>Koncert je otvoritveni dogodek Tedna ljubiteljske kulture v organizaciji JSKD.</strong></p><p>Letna produkcija Akademske folklorne skupine France Marolt je tokrat posvečena 80-letnici rojstva enega najvidnejših koreografov in etnokoreologov na Slovenskem, Mirka Ramovša, in 60-letnici njegovega delovanja pri skupini.</p>  <p>Predstava bo zasnovana na poustvaritvi nekaterih delov koreografij Ramovševega redkeje izvajanega opusa, skupaj z novitetami umetniškega vodje Akademske folklorne skupine France Marolt Tomaža Simetingerja, ob zvokih simfoničnega orkestra, za folklorno skupino povsem neklasične glasbene spremljave. K sodelovanju smo letos povabili tudi mladega skladatelja Andreja Makorja, ki je v aranžma za simfonični orkester »preoblekel« devetdeset minut ljudske glasbe. Potek predstave bo s harmonizacijo glasbe in gradacijo plesne zasnove, ki bo temeljila na prepletu kratkih koreografij, simbolično nakazoval na nenehno rast in razvoj folklorne umetnosti, kakršno gojijo in ustvarjajo pri Akademski folklorni skupini France Marolt. Del zvočne podobe koncerta bo zapolnilo tudi a capella petje, ki bo delno usmerjeno v eksperimentalno poustvarjanje in iskanje novih zvočnosti (po)ustvarjanja t. i. ljudskega petja. Gala koncert AFS France Marolt s Simfoničnim orkestrom Crescendo bo obenem tudi del <strong>osrednjega otvoritvenega dogodka Tedna ljubiteljske kulture za osrednjo Slovenijo</strong>.</p>  <p>Premikanje meja v folklorni umetnosti je bilo od nekdaj vodilo največje in ene najstarejših slovenskih folklornih skupin – Akademske folklorne skupine France Marolt. Letne produkcije priljubljenih maroltovcev na odru Cankarjevega doma vedno znova presenečajo, poustvarjanje t. i. ljudskega plesa, glasbe in oblačilne dediščine pa postavljajo ob bok sodobni odrski umetnosti.<p>  <p>V devetdesetminutni plesno-pevski predstavi v spremljavi simfonikov bo sodelovalo več kot 150 plesalcev, pevcev in glasbenikov.</p>  <p>Umetniško vodstvo: Tomaž Simetinger</p> <p>Aranžer glasbe za simfonični orkester: Andrej Makor</p> <p>Dirigent Simfoničnega orkestra Crescendo: Žiga Kert</p>",
+		"img_album": "",
+		"videos": [] 
+	},
+	"dog_5":
+	{
+		"tip": "mpz",
+		"ime": "Avdicije",
+		"opis": "Študentski mešani pevski zbor Crescendo vabi nove člane.",
+		"kraj": "Gimnazija Škofja Loka",
+		"datum": ["4.9.2015, 18:00", "11.9.2015, 18:00"],
+		"img_plakat": "https://farm6.staticflickr.com/5730/20772720026_7fcb3a0de6_b.jpg",
+		"besedilo": "",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_6":
+	{
+		"tip": "ork",
+		"ime": "Božično-novoletni koncert 2015",
+		"opis": "",
+		"kraj": "Sokolski dom, Škofja Loka",
+		"datum": ["11.12.2015, 17:00 in 20:00"],
+		"img_plakat": "https://farm2.staticflickr.com/1570/24233844195_2b38860ce2_b.jpg",
+		"besedilo": "",
+		"img_album": "",
+		"videos": ["https://www.youtube.com/embed/a5Kn7-XmsXM"]
+	},
+	"dog_7":
+	{
+		"tip": "mpz",
+		"ime": "Koncert v Stari Loki",
+		"opis": "",
+		"kraj": "Jurijeva Dvorana, Stara Loka",
+		"datum": ["27.2.2016, 19:00"],
+		"img_plakat": "https://farm2.staticflickr.com/1570/24587787614_59813de178_b.jpg",
+		"besedilo": "Vljudno vabljeni na koncert mešanega pevskega zbora Crescendo. Pripravili smo pester program tako ljudskih kot tudi modernejših skladb.",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_8":
+	{
+		"tip": "mpz",
+		"ime": "Koncert v Preski",
+		"opis": "Opomba: koncert se bo odvijal v cerkvi in ne v župnijski dvorani.",
+		"kraj": "Cerkev v Preski",
+		"datum": ["12.3.2016, 19:00"],
+		"img_plakat": "https://farm2.staticflickr.com/1654/25670537196_3a948fe6bc_o.jpg",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_9":
+	{
+		"tip": "mpz",
+		"ime": "Koncert v Stražišču",
+		"opis": "",
+		"kraj": "Šmartinski dom v Stražišču",
+		"datum": ["3.4.2016, 20:00"],
+		"img_plakat": "https://farm2.staticflickr.com/1644/25704269444_37bbc275a4_o.jpg",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_10":
+	{
+		"tip": "mpz",
+		"ime": "Koncert na Bledu",
+		"opis": "",
+		"kraj": "cerkev sv. Martina na Bledu",
+		"datum": ["17.4.2016, 20:00"],
+		"img_plakat": "https://farm2.staticflickr.com/1587/26309139625_a1399678ed_o.jpg",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_11":
+	{
+		"tip": "mpz",
+		"ime": "Magistrski koncert",
+		"opis": "Pa smo tu! Koncert na katerega smo se pripravljali vse leto.",
+		"kraj": "Kazinska dvorana, Kongresni trg 1/I",
+		"datum": ["22.4.2016, 19:30"],
+		"img_plakat": "https://farm2.staticflickr.com/1511/26486588936_b80885768a_o.jpg",
+		"besedilo": "Vljudno vabljeni!",
+		"img_album": "",
+		"videos": []
+	},
+	"dog_12":
+	{
+		"tip": "ork",
+		"ime": "Pot ljubezni iz New Yorka do Firenc",
+                "opis": "",
+		"kraj": "Sokolski dom, Škofja Loka",
+		"datum": ["13.5.2016, 17:00 in 19:30"],
+		"img_plakat": "https://farm8.staticflickr.com/7571/26880281071_c4d29d7303_b.jpg",
+		"besedilo": "Karto si lahko rezervirate na naslovu <strong>s.o.crescendo@gmail.com</strong> ali pa pri enem od članov orkestra.",
+		"img_album": "",
+		"videos": ["https://www.youtube.com/embed/AldobY5Sa0Q"]
+	}
+}
