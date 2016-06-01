@@ -141,5 +141,17 @@
 		"besedilo": "Karto si lahko rezervirate na naslovu <strong>s.o.crescendo@gmail.com</strong> ali pa pri enem od članov orkestra.",
 		"img_album": "",
 		"videos": ["https://www.youtube.com/embed/AldobY5Sa0Q"]
+	},
+        "dog_13":
+	{
+		"tip": "mpz",
+		"ime": "Koncert v Selcih",
+                "opis": "",
+		"kraj": "cerkev sv. Petra, Selca",
+		"datum": ["13.5.2016, 17:00 in 19:30"],
+		"img_plakat": "https://c8.staticflickr.com/8/7477/27329665751_81f1553c6d_b.jpg",
+		"besedilo": "Lepo vabljeni!",
+		"img_album": "",
+		"videos": [""]
 	}
 }
