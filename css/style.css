@@ -12,6 +12,7 @@
 	margin: 0px 0px 0px 10px;
 	vertical-align: middle;
 	padding-top: 4px;
+	color: #333;
 }
 
 a:hover, a:active, a:focus {
@@ -26,6 +27,8 @@ body {
 
 h2 {
 	font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 p {
@@ -64,6 +67,7 @@ p {
 	display: none; /*wait for fadeIn()*/
 	border-radius: 0px;
 	border-color: #FFF;
+	font-weight: 400;
 }
 
 /*center the navbar*/
@@ -108,7 +112,7 @@ p {
 
 #conductor img {
     width: auto;
-    max-height: 70vh;
+    max-height: 75vh;
 }
 
 #content > div {
@@ -119,11 +123,7 @@ p {
 	margin-bottom: 25px;
 }
 
-.event-display, #conductor p {
-	padding-top: 10px;
-}
-
-.event-display *, #conductor iframe, #conductor p, #conductor h2 {
+.event-display>*, #conductor>*, #orchestra>*, #choir>* {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -132,16 +132,13 @@ p {
 	height: 50vh;
 }
 
-.event-display h2, #conductor h2 {
-	margin-bottom: 40px;
-}
-
 #cv-slo {
-	text-align: right;
+	text-align: left;
 }
 
 #cv-eng {
 	text-align: left;
+	display: none;
 }
 
 footer {

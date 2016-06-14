@@ -100,4 +100,9 @@ function scroll_to_anchor(anchor_id){
 $("#nav-recent-event").click(function(){ scroll_to_anchor("recent-event"); });
 $("#nav-conductor").click(function(){ scroll_to_anchor("conductor"); });
 $("#nav-contact").click(function(){ scroll_to_anchor("contact"); });
+$("#nav-orchestra").click(function(){ scroll_to_anchor("orchestra"); });
+$("#nav-choir").click(function(){ scroll_to_anchor("choir"); });
 
+//toggle CV language
+$("#cv-slo-to-eng").click(function(){ $("#cv-slo").hide(); $("#cv-eng").show(); return false; });
+$("#cv-eng-to-slo").click(function(){ $("#cv-eng").hide(); $("#cv-slo").show(); return false; });
