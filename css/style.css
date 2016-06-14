@@ -7,6 +7,13 @@
 	margin: 0px;
 }
 
+.fa-facebook-square {
+	font-size: 30px;
+	margin: 0px 0px 0px 10px;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+
 a:hover, a:active, a:focus {
 	outline: 0;
 	color: #333;

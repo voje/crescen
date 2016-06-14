@@ -6,10 +6,18 @@ var select = {
 	recent_event: $("#recent-event"),
 	conductor_img: $("#conductor-img"),
 	content: $("#content"),
-	footer: $("footer")
+	footer: $("footer"),
+	body: $("body")
 };
 
 var events_data = {};
+var phone_mode = false;
+
+if(window.innerWidth <= 640){
+	phone_mode = true;
+	select.navbar.fadeIn("slow");
+	select.body.css("padding-top", select.navbar.attr("height"));
+}
 
 function display_event(id){
 	event = events_data[id];
@@ -60,8 +68,10 @@ function load_header(data){
 }
 
 function scroll_callback(){
+	if(phone_mode){
+		return;
+	}
 	var y_pos = window.pageYOffset;
-	console.log(y_pos);
 	if(y_pos > select.hero.height()){
 		select.navbar.fadeIn("slow");
 	}else{
