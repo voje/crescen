@@ -134,7 +134,7 @@
 	{
 		"tip": "ork",
 		"ime": "Pot ljubezni iz New Yorka do Firenc",
-                "opis": "",
+        "opis": "",
 		"kraj": "Sokolski dom, Škofja Loka",
 		"datum": ["13.5.2016, 17:00 in 19:30"],
 		"img_plakat": "https://farm8.staticflickr.com/7571/26880281071_c4d29d7303_b.jpg",
@@ -142,15 +142,27 @@
 		"img_album": "",
 		"videos": ["https://www.youtube.com/embed/AldobY5Sa0Q"]
 	},
-        "dog_13":
+    "dog_13":
 	{
 		"tip": "mpz",
 		"ime": "Koncert v Selcih",
-                "opis": "",
+        "opis": "",
 		"kraj": "cerkev sv. Petra, Selca",
 		"datum": ["13.5.2016, 17:00 in 19:30"],
 		"img_plakat": "https://c8.staticflickr.com/8/7477/27329665751_81f1553c6d_b.jpg",
 		"besedilo": "Lepo vabljeni!",
+		"img_album": "",
+		"videos": []
+	},
+    "dog_14":
+	{
+		"tip": "mpz",
+		"ime": "Škofja Loka, Melbourne",
+        "opis": "Avstralski pevski zbor iz Melbourna, ki je na turneji po Evropi, se bo za teden dni ustavil tudi pri nas. Združili bomo moči in pripravili prijeten koncert.",
+		"kraj": "župnijska cerkev v Preski",
+		"datum": ["18.6.2016, 19:45"],
+		"img_plakat": "https://c5.staticflickr.com/8/7459/27584920092_1dae853a64_k.jpg",
+		"besedilo": "",
 		"img_album": "",
 		"videos": []
 	}

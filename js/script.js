@@ -116,7 +116,7 @@ select.recent_event.on("click", "#button-all-events", function(){
 	select.recent_event.append("<h2>Vsi dogodki</h2>");
 	var row = $("<div id='event-thumbnails' class='row'></div>");
 	for(event in events_data){ //event is key
-		var im = $("<a href='#'><figure id='"+ event +"'><img class='event-thumbnail' src="+ events_data[event]["img_plakat"] +"/></figure></a>");
+		var im = $("<a href='#'><figure class='event-thumbnail' id='"+ event +"'><img src="+ events_data[event]["img_plakat"] +"/></figure></a>");
 		var di = $("<div class='col-md-6'></div>");
 		di.append(im);
 		row.prepend(di);
@@ -125,7 +125,7 @@ select.recent_event.on("click", "#button-all-events", function(){
 	scroll_to_anchor("recent-event");
 });
 
-select.recent_event.on("click", "figure", function(){
+select.recent_event.on("click", ".event-thumbnail", function(){
 	select.recent_event.empty();
 	display_event($(this).attr("id"));
 	scroll_to_anchor("recent-event");
