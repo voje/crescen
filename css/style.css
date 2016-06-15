@@ -7,6 +7,20 @@
 	margin: 0px;
 }
 
+#button-all-events {
+	float: right;
+}
+
+#event-thumbnails * {
+	margin: 0px;
+	padding: 0px;
+}
+
+.event-thumbnail {
+	height: 100%;
+	width: auto;
+}
+
 .fa-facebook-square {
 	font-size: 30px;
 	margin: 0px 0px 0px 10px;
@@ -111,8 +125,9 @@ p {
 }
 
 #conductor img {
-    width: auto;
-    max-height: 75vh;
+	height: 70vh;
+	width: auto;
+	padding-bottom: 10px;
 }
 
 #content > div {

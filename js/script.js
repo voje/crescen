@@ -43,6 +43,8 @@ function display_event(id){
 
 	if(event.besedilo != "")
 		select.recent_event.append("<p>"+ event.besedilo +"</p>");	
+
+	select.recent_event.append("<button id='button-all-events'>Vsi dogodki</button>");
 }
 
 function load_events_data(data){
@@ -106,3 +108,26 @@ $("#nav-choir").click(function(){ scroll_to_anchor("choir"); });
 //toggle CV language
 $("#cv-slo-to-eng").click(function(){ $("#cv-slo").hide(); $("#cv-eng").show(); return false; });
 $("#cv-eng-to-slo").click(function(){ $("#cv-eng").hide(); $("#cv-slo").show(); return false; });
+
+//list all events (binding to outer element, since button was dynamic)
+//build thumbnail from inside out
+select.recent_event.on("click", "#button-all-events", function(){
+	select.recent_event.empty();
+	select.recent_event.append("<h2>Vsi dogodki</h2>");
+	var row = $("<div id='event-thumbnails' class='row'></div>");
+	for(event in events_data){ //event is key
+		var im = $("<a href='#'><figure id='"+ event +"'><img class='event-thumbnail' src="+ events_data[event]["img_plakat"] +"/></figure></a>");
+		var di = $("<div class='col-md-6'></div>");
+		di.append(im);
+		row.prepend(di);
+	}
+	select.recent_event.append(row);
+	scroll_to_anchor("recent-event");
+});
+
+select.recent_event.on("click", "figure", function(){
+	select.recent_event.empty();
+	display_event($(this).attr("id"));
+	scroll_to_anchor("recent-event");
+	return false;
+});
