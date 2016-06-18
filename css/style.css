@@ -125,8 +125,8 @@ p {
 }
 
 #conductor img {
-	height: 70vh;
-	width: auto;
+	height: auto;
+	width: 100%;
 	padding-bottom: 10px;
 }
 
@@ -147,12 +147,7 @@ p {
 	height: 50vh;
 }
 
-#cv-slo {
-	text-align: left;
-}
-
 #cv-eng {
-	text-align: left;
 	display: none;
 }
 
