@@ -13,10 +13,13 @@ var select = {
 var events_data = {};
 var phone_mode = false;
 
-if(window.innerWidth <= 640){
-	phone_mode = true;
-	select.navbar.fadeIn("slow");
-	select.body.css("padding-top", select.navbar.attr("height"));
+function medium_check() {
+	if(window.innerWidth <= 640){
+		console.log("Debug: mobile screen detected.");
+		phone_mode = true;
+		select.navbar.fadeIn("slow");
+		select.body.css("padding-top", select.navbar.attr("height"));
+	}
 }
 
 function display_event(id){
@@ -27,10 +30,15 @@ function display_event(id){
 	if(event.opis != "")
 		select.recent_event.append("<p>"+ event.opis +"</p>");	
 
-	if(event.videos.length != 0)
-		for(i in event.videos){
+	if(event.videos.length != 0) {
+		for (i in event.videos) {
 			select.recent_event.append("<figure><iframe src='"+ event.videos[i] +"'/></figure>");
 		}
+	}
+
+	if (event.img_album != "") {
+		//todo: display album, fix album representation in dogodki.json
+	}
 
 	if(event.kraj != "")
 		select.recent_event.append("<p>"+ event.kraj +"</p>");	
@@ -88,6 +96,7 @@ function scroll_callback(){
 
 $(document).ready(function(){
 	console.log("greetings!");
+	medium_check();
 	$.getJSON("./images/jumbotrons/headers.json", load_header);
 	$.getJSON("./data/dogodki.json", load_events_data);
 });
