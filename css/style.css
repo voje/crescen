@@ -29,6 +29,10 @@
 	color: #333;
 }
 
+#flickr_album {
+	height: 80vh;
+}
+
 a:hover, a:active, a:focus {
 	outline: 0;
 	color: #333;
