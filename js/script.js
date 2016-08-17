@@ -13,13 +13,12 @@ var select = {
 var events_data = {};
 var phone_mode = false;
 
-function medium_check() {
-	if($(window).width() <= 640){
-		console.log("Debug: mobile screen detected.");
+function check_mobile() {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		phone_mode = true;
-		select.navbar.fadeIn("slow");
-		select.body.css("padding-top", select.navbar.attr("height"));
+		return true;
 	}
+	return false;
 }
 
 function display_event(id){
@@ -77,10 +76,7 @@ function load_header(data){
 	select.footer.css("background-color", color);
 }
 
-function scroll_callback(){
-	if(phone_mode){
-		return;
-	}
+function scroll_callback() {
 	var y_pos = window.pageYOffset;
 	if(y_pos > select.hero.height()){
 		select.navbar.fadeIn("slow");
@@ -94,29 +90,32 @@ function scroll_callback(){
 	//select.conductor_img.css("top", -y_pos * 0.7);
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
 	console.log("greetings!");
-	medium_check();
+	check_mobile();
 	$.getJSON("./images/jumbotrons/headers.json", load_header);
 	$.getJSON("./data/dogodki.json", load_events_data);
 });
 
-window.addEventListener("scroll", scroll_callback);
+if (!check_mobile()) {
+	console.log("Adding scroll listener.");
+	window.addEventListener("scroll", scroll_callback);
+}
 
-function scroll_to_anchor(anchor_id){
+function scroll_to_anchor(anchor_id) {
     var tag = $("#"+anchor_id+"");
     $('html,body').animate({scrollTop: tag.offset().top - 50},'slow');
 }
 
-$("#nav-recent-event").click(function(){ scroll_to_anchor("recent-event"); });
-$("#nav-conductor").click(function(){ scroll_to_anchor("conductor"); });
-$("#nav-contact").click(function(){ scroll_to_anchor("contact"); });
-$("#nav-orchestra").click(function(){ scroll_to_anchor("orchestra"); });
-$("#nav-choir").click(function(){ scroll_to_anchor("choir"); });
+$("#nav-recent-event").click(function() { scroll_to_anchor("recent-event"); });
+$("#nav-conductor").click(function() { scroll_to_anchor("conductor"); });
+$("#nav-contact").click(function() { scroll_to_anchor("contact"); });
+$("#nav-orchestra").click(function() { scroll_to_anchor("orchestra"); });
+$("#nav-choir").click(function() { scroll_to_anchor("choir"); });
 
 //toggle CV language
-$("#cv-slo-to-eng").click(function(){ $("#cv-slo").hide(); $("#cv-eng").show(); return false; });
-$("#cv-eng-to-slo").click(function(){ $("#cv-eng").hide(); $("#cv-slo").show(); return false; });
+$("#cv-slo-to-eng").click(function() { $("#cv-slo").hide(); $("#cv-eng").show(); return false; });
+$("#cv-eng-to-slo").click(function() { $("#cv-eng").hide(); $("#cv-slo").show(); return false; });
 
 //list all events (binding to outer element, since button was dynamic)
 //build thumbnail from inside out
@@ -124,7 +123,7 @@ select.recent_event.on("click", "#button-all-events", function(){
 	select.recent_event.empty();
 	select.recent_event.append("<h2>Vsi dogodki</h2>");
 	var row = $("<div id='event-thumbnails' class='row'></div>");
-	for(event in events_data){ //event is key
+	for(event in events_data) { //event is key
 		var im = $("<a href='#'><figure class='event-thumbnail' id='"+ event +"'><img src="+ events_data[event]["img_plakat"] +"/></figure></a>");
 		var di = $("<div class='col-md-6'></div>");
 		di.append(im);
