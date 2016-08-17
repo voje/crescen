@@ -14,7 +14,7 @@ var events_data = {};
 var phone_mode = false;
 
 function medium_check() {
-	if(window.screen.width <= 640){
+	if($(window).width() <= 640){
 		console.log("Debug: mobile screen detected.");
 		phone_mode = true;
 		select.navbar.fadeIn("slow");
