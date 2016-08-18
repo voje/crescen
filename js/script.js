@@ -37,7 +37,8 @@ function display_event(id){
 
 	if (event.img_album != "") {
 		//todo: display album, fix album representation in dogodki.json
-		select.recent_event.append("<figure><iframe id='flickr_album' src='"+event.img_album+"' scrolling='no' frameborder='0'style='position: relative; top:0; left:0;' ></iframe>");
+		//select.recent_event.append("<figure><iframe id='flickr_album' src='"+event.img_album+"' scrolling='no' frameborder='0'style='position: relative; top:0; left:0;' ></iframe>");
+		select.recent_event.append(event.img_album);
 	}
 
 	if(event.kraj != "")
