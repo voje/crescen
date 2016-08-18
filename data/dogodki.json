@@ -7,7 +7,8 @@
 		"datum": ["9.5.2014, 17:00 in 19:00"],
 		"img_plakat": "https://farm9.staticflickr.com/8677/16016122163_9efb509699_b.jpg",
 		"besedilo": "",
-		"img_album": "http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157651009906021&thumbnails=0&transition=0&layoutType=responsive&sort=0",
+		"old_img_album": "http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157651009906021&thumbnails=0&transition=0&layoutType=responsive&sort=0",
+		"img_album": "<object width='400' height='300'> <param name='flashvars' value='offsite=true&lang=en-us&page_show_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157651009906021%2Fshow%2F&page_show_back_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157651009906021%2F&set_id=72157651009906021&jump_to='></param> <param name='movie' value='https://www.flickr.com/apps/slideshow/show.swf?v=261948265'></param> <param name='allowFullScreen' value='true'></param><embed type='application/x-shockwave-flash' src='https://www.flickr.com/apps/slideshow/show.swf?v=261948265' allowFullScreen='true' flashvars='offsite=true&lang=en-us&page_show_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157651009906021%2Fshow%2F&page_show_back_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157651009906021%2F&set_id=72157651009906021&jump_to=' width='400' height='300'></embed></object>",
 		"videos": ["https://www.youtube.com/embed/KOfKGjfWYjg", "https://www.youtube.com/embed/nF-LMyU3TSY", "https://www.youtube.com/embed/ByQrznOFHYQ", "https://www.youtube.com/embed/oy4QrdmnZNI"]
 	},
 	"dog_2":
@@ -31,7 +32,8 @@
 		"datum": ["20.12.2014, 19:00"],
 		"img_plakat": "https://farm9.staticflickr.com/8623/16025854514_c2e5f67df5_b.jpg",
 		"besedilo": "",
-		"img_album": "http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157650974639716&thumbnails=0&transition=0&layoutType=responsive&sort=0",
+		"old_img_album": "http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157650974639716&thumbnails=0&transition=0&layoutType=responsive&sort=0",
+		"img_album": "<object width='400' height='300'> <param name='flashvars' value='offsite=true&lang=en-us&page_show_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157650974639716%2Fshow%2F&page_show_back_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157650974639716%2F&set_id=72157650974639716&jump_to='></param> <param name='movie' value='https://www.flickr.com/apps/slideshow/show.swf?v=261948265'></param> <param name='allowFullScreen' value='true'></param><embed type='application/x-shockwave-flash' src='https://www.flickr.com/apps/slideshow/show.swf?v=261948265' allowFullScreen='true' flashvars='offsite=true&lang=en-us&page_show_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157650974639716%2Fshow%2F&page_show_back_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157650974639716%2F&set_id=72157650974639716&jump_to=' width='400' height='300'></embed></object>",
 		"videos": ["https://www.youtube.com/embed/kvORSJFWxDE"]
 	},
 	"dog_4":
