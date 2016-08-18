@@ -30,7 +30,7 @@
 }
 
 #flickr_album {
-	height: 80vh;
+	height: auto;
 }
 
 a:hover, a:active, a:focus {
