@@ -16,6 +16,10 @@
 	padding: 0px;
 }
 
+.event-tr {
+	cursor: pointer;
+}
+
 .event-thumbnail {
 	height: 100%;
 	width: auto;

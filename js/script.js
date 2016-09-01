@@ -124,6 +124,8 @@ $("#cv-eng-to-slo").click(function() { $("#cv-eng").hide(); $("#cv-slo").show();
 select.recent_event.on("click", "#button-all-events", function(){
 	select.recent_event.empty();
 	select.recent_event.append("<h2>Vsi dogodki</h2>");
+
+	/*
 	var row = $("<div id='event-thumbnails' class='row'></div>");
 	for(event in events_data) { //event is key
 		var im = $("<a href='#'><figure class='event-thumbnail' id='"+ event +"'><img src="+ events_data[event]["img_plakat"] +"/></figure></a>");
@@ -131,13 +133,44 @@ select.recent_event.on("click", "#button-all-events", function(){
 		di.append(im);
 		row.prepend(di);
 	}
-	select.recent_event.append(row);
+	*/
+	var table = $("<table class='table table-hover'></table>");
+	var thead = $("<thead></thead>");
+	var tbody = $("<tbody></tbody>");
+	for (event in events_data) {
+		var objEvent = events_data[event];
+		var name = objEvent["ime"];
+		var date = "";
+		if (objEvent["datum"].length > 0) {
+			date = objEvent["datum"][0];
+		}
+		var trow = $("<tr class='event-tr' id='"+event+"'> <td>"+date+"</td><td>"+name+"</td> </tr>");
+		console.log(trow);
+		tbody.prepend(trow);
+	}
+	//var trow = $("<tr> <td>test</td><td>test1</td> </tr>");
+	//tbody.append(trow);
+	table.append(thead);
+	table.append(tbody);
+
+	//select.recent_event.append(row);
+	select.recent_event.append(table);
 	scroll_to_anchor("recent-event");
 });
 
+/*
 select.recent_event.on("click", ".event-thumbnail", function(){
 	select.recent_event.empty();
 	display_event($(this).attr("id"));
 	scroll_to_anchor("recent-event");
 	return false;
 });
+*/
+
+select.recent_event.on("click", ".event-tr", function(){
+	select.recent_event.empty();
+	display_event($(this).attr("id"));
+	scroll_to_anchor("recent-event");
+	return false;
+});
+
