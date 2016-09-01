@@ -160,12 +160,24 @@
 	{
 		"tip": "mpz",
 		"ime": "Škofja Loka, Melbourne",
-        "opis": "Avstralski pevski zbor iz Melbourna, ki je na turneji po Evropi, se bo za teden dni ustavil tudi pri nas. Združili bomo moči in pripravili prijeten koncert.",
+		"opis": "Avstralski pevski zbor iz Melbourna, ki je na turneji po Evropi, se bo za teden dni ustavil tudi pri nas. Združili bomo moči in pripravili prijeten koncert.",
 		"kraj": "župnijska cerkev v Preski",
 		"datum": ["18.6.2016, 19:45"],
 		"img_plakat": "https://c5.staticflickr.com/8/7459/27584920092_1dae853a64_k.jpg",
 		"besedilo": "",
 		"img_album": "",
+		"videos": []
+	},
+    "dog_15":
+	{
+		"tip": "mpz",
+		"ime": "Choralies 2016",
+		"opis": "",
+		"kraj": "Vaison-la-Romaine, Francija",
+		"datum": ["2.8.2016"],
+		"img_plakat": "",
+		"besedilo": "",
+		"img_album": "<object width='400' height='300'> <param name='flashvars' value='offsite=true&lang=en-us&page_show_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157672619396255%2Fshow%2F&page_show_back_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157672619396255%2F&set_id=72157672619396255&jump_to='></param> <param name='movie' value='https://www.flickr.com/apps/slideshow/show.swf?v=261948265'></param> <param name='allowFullScreen' value='true'></param><embed type='application/x-shockwave-flash' src='https://www.flickr.com/apps/slideshow/show.swf?v=261948265' allowFullScreen='true' flashvars='offsite=true&lang=en-us&page_show_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157672619396255%2Fshow%2F&page_show_back_url=%2Fphotos%2F131568894%40N04%2Fsets%2F72157672619396255%2F&set_id=72157672619396255&jump_to=' width='400' height='300'></embed></object>",
 		"videos": []
 	}
 }
